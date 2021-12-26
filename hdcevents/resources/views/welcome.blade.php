@@ -43,5 +43,15 @@
             <p>O i é 2</p>
             @endif
         @endfor
+
+        @foreach($nomes as $nome)
+            <p>{{ $loop->index }}</p>
+            <p>{{ $nome }}</p>
+        @endforeach
+
+        @php
+            $name = "João";
+            echo $name;
+        @endphp
     </body>
 </html>
