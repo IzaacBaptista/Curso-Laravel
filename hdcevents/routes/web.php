@@ -18,7 +18,7 @@ Route::get('/', function () {
     $nome = "Izaac";
     $idade = "28";
 
-    return view('welcome', ['nome' => $nome, 'idade' => $idade]);
+    return view('welcome', ['nome' => $nome, 'idade' => $idade, 'profissao' => 'Programador']);
 });
 
 Route::get('/contact', function () {
