@@ -18,7 +18,12 @@
         {{-- Javascript --}}
         <script src="/js/script.js"></script>
     </head>
-    <body class="antialiased">
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+            </nav>
+        </header>
 
         @yield('content')
         <footer>
