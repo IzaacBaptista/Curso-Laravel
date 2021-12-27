@@ -36,7 +36,11 @@ Route::get('/contato', function () {
 });
 
 Route::get('/produtos', function () {
-    return view('products');
+
+    $busca = request('search');
+
+    return view('products', ['busca' => $busca]);
+
 });
 
 Route::get('/produto/{id}', function ($id) {
