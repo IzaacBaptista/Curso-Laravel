@@ -31,10 +31,14 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/contact', function () {
+Route::get('/contato', function () {
     return view('contact');
 });
 
-Route::get('/products', function () {
+Route::get('/produtos', function () {
     return view('products');
+});
+
+Route::get('/produto/{id}', function ($id) {
+    return view('product',['id' => $id]);
 });

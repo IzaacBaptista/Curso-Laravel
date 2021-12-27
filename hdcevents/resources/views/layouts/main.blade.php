@@ -14,7 +14,7 @@
 
         {{-- CSS local --}}
         <link rel="stylesheet" href="/css/style.css">
-        
+
         {{-- Javascript --}}
         <script src="/js/script.js"></script>
     </head>
