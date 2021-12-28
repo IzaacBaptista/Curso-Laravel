@@ -22,6 +22,9 @@ class EventController extends Controller
             'arr' => $arr,
             'nomes' => $nomes
         ]);
+    }
 
+    public function create() {
+        return view('events.create');
     }
 }
