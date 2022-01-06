@@ -27,6 +27,10 @@ class EventController extends Controller
         $event->city = $request->city;
         $event->private = $request->private;
         $event->participants = $request->participants;
-        $event->description = $request->title;
+        $event->description = $request->description;
+
+        $event->save();
+
+        return redirect('/');
     }
 }
