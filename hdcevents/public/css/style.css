@@ -122,6 +122,10 @@ header {
     color: #757575;
 }
 
+.form-group {
+    padding: 10px;
+}
+
 #event-create-container {
     padding: 15px;
 }
@@ -134,6 +138,11 @@ header {
 #event-create-container select,
 #event-create-container textarea {
     font-size: 14px;
+}
+
+.form-button {
+    padding-top: 30px;
+    padding-left: 45%;
 }
 
 

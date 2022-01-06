@@ -35,7 +35,9 @@
             <label for="title">Descrição:</label>
             <textarea class="form-control" id="description" name="description" placeholder="O que vai acontecer no evento?">
             </textarea>
-            <input type="submit" class="btn btn-primary" value="Criar Evento">
+            <div class="form-button">
+                <input type="submit" class="btn btn-primary" value="Criar Evento">
+            </div>
         </div>
     </form>
 </div>
