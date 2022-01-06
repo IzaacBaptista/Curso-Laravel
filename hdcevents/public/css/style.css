@@ -112,6 +112,11 @@ header {
     margin-bottom: 30px;
 }
 
+.card .card-description {
+    font-size: 15px;
+    color: #757575;
+}
+
 .card-participants {
     font-size: 14px;
     color: #757575;

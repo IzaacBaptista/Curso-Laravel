@@ -24,9 +24,11 @@
             <div class="card col-md-3">
                 <img src="/img/event_placeholder.jpg" alt="{{ $event->title }}">
                 <div class="card-body">
-                    <p class="card-date">10/09/2022</p>
-                    <h5 class="card-title">{{ $event->title }}</h5>
-                    <p class="card-participants">X Participantes</p>
+                    <p class="card-date">{{ $event->data }}</p>
+                    <h4 class="card-title">{{ $event->title }}</h4>
+                    <h5 class="card-description">{{ $event->description }}</h5>
+                    <p class="card-participants">{{ $event->participants }}</p>
+                    <p class="card-city">{{ $event->city }}</p>
                     <a href="#" class="btn btn-primary">Saber mais</a>
                 </div>
             </div>
