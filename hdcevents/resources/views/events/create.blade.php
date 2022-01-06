@@ -9,7 +9,7 @@
     <form action="/events" method="POST">
         <div class="form-group">
             <label for="title">Evento:</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" placeholder="Nome do Evento">
         </div>
         <div class="form-group">
             <label for="title">Data:</label>
@@ -24,7 +24,7 @@
             <input type="number" class="form-control" id="participants" name="participants" placeholder="Participantes">
         </div>
         <div class="form-group">
-            <label for="title">O evento é privado?</label>
+            <label for="title">O Evento é privado?</label>
             <select class="form-control" name="private" id="private">
                 <option value="0">Não</option>
                 <option value="1">Sim</option>
@@ -33,13 +33,13 @@
         <div class="form-group">
             <label for="title">Descrição:</label>
             <textarea
-                rows="5"
-                cols="5"
                 class="form-control"
                 id="description"
                 name="description"
+                placeholder="O que vai acontecer no evento?"
             >
             </textarea>
+            <input type="submit" class="btn btn-primary" value="Criar Evento">
         </div>
     </form>
 </div>
