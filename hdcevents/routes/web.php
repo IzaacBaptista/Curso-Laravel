@@ -18,11 +18,15 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create']);
-Route::post('/events', [EventController::class, 'store']);
+Route::get('/events/{$id}', [EventController::class, 'show']);
 Route::get('/contato', [ContactController::class, 'contact']);
-
 Route::get('/produtos', [ProductController::class, 'index']);
 
 Route::get('/produto/{id}', function ($id) {
     return view('product',['id' => $id]);
 });
+
+Route::post('/events', [EventController::class, 'store']);
+
+
+
