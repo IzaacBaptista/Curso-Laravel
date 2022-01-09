@@ -26,8 +26,10 @@
                 <div class="card-body">
                     <h4 class="card-title">{{ $event->title }}</h4>
                     <p class="card-date">{{ $event->data }}</p>
-                    <p class="card-city">{{ $event->city }}</p>
-                    <p class="card-participants">{{ $event->participants }}</p>
+                    <p class="event-city">
+                        <ion-icon name="location-outline"></ion-icon>{{ $event->city }}
+                    </p>
+                    <p class="card-participants">{{ $event->participants }} Participantes</p>
                     <h5 class="card-description">{{ $event->description }}</h5>
                     <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
                 </div>
