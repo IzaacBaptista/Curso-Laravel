@@ -12,19 +12,19 @@
             <div id="info-container" class="col-md-6">
                 <h1>{{ $event->title }}</h1>
                 <p class="event-city">
-                    <ion-icon name="location-outline"></ion-icon> {{ $event->city }}
+                    <img src="https://img.icons8.com/ios-glyphs/20/000000/place-marker.png"/>{{ $event->city }}
                 </p>
                 <p class="events-participants">
-                    <ion-icon name="people-outline"></ion-icon>{{ $event->participants }} Participantes
+                    <img src="https://img.icons8.com/ios-filled/20/000000/conference-call.png"/>{{ $event->participants }} Participantes
                 </p>
                 <p class="event-owner">
-                    <ion-icon name="star-outline"></ion-icon> Dono do Evento
+                    <img src="https://img.icons8.com/material-sharp/20/000000/star--v1.png"/>Dono do Evento
                 </p>
                 <a href="#" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
                 <h3>O Evento conta com:</h3>
                 <ul id="items-list">
                 @foreach($event->items as $item)
-                    <li><ion-icon name="play-outline"></ion-icon><span>{{ $item }} </span></li>
+                    <li><img src="https://img.icons8.com/ios-filled/20/000000/play--v1.png"/>{{ $item }} </span></li>
                 @endforeach
                 </ul>
             </div>
