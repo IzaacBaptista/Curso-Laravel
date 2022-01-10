@@ -25,7 +25,7 @@
                 <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
                 <div class="card-body">
                     <h4 class="card-title">{{ $event->title }}</h4>
-                    <p class="card-date"> {{ $event->data }}</p>
+                    <p class="card-date"> {{ date('d/m/Y', strtotime($event->data)) }}</p>
                     <p class="event-city">
                         {{ $event->city }}
                     </p>
@@ -35,6 +35,9 @@
                 </div>
             </div>
         @endforeach
+        @if(count($events) == 0)
+            <p>Não há eventos disponíveis</p>
+        @endif
     </div>
 </div>
 
