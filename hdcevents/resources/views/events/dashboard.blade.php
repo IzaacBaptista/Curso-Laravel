@@ -25,12 +25,12 @@
                     <td><a href="/events/{{ $event->id }}">{{ $event->title }}</a></td>
                     <td>0</td>
                     <td>
-                        <a href="#" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a>
-                        {{-- <form action="/events/{{ $event->id }}" method="PUT">
+                        {{-- <a href="#" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</a> --}}
+                        <form action="/events/{{ $event->id }}" method="PUT">
                             @csrf
                             @method('UPDATE')
                             <button type="submit" class="btn btn-info edit-btn"><ion-icon name="create-outline"></ion-icon>Editar</button>
-                        </form> --}}
+                        </form>
                         <form action="/events/{{ $event->id }}" method="POST">
                             @csrf
                             @method('DELETE')
