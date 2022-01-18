@@ -28,9 +28,8 @@ Route::get('/produto/{id}', function ($id) {
 
 Route::post('/events', [EventController::class, 'store']);
 
+Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
 
-
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
