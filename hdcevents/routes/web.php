@@ -20,16 +20,7 @@ Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
 Route::get('/events/{id}', [EventController::class, 'show']);
 Route::get('/contato', [ContactController::class, 'contact']);
-Route::get('/produtos', [ProductController::class, 'index']);
-
-Route::get('/produto/{id}', function ($id) {
-    return view('product',['id' => $id]);
-});
-
+Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
+Route::delete('/events/{id}', [EventController::class, 'destroy']);
 Route::post('/events', [EventController::class, 'store']);
 
-Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
-
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
