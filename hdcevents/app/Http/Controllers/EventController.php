@@ -85,4 +85,11 @@ class EventController extends Controller
 
         return redirect('/dashboard')->with('msg', 'Evento excluido com sucesso!');
     }
+
+    public function update($id) {
+
+        Event::findOrfaill($id)->update();
+
+        return redirect('/dashboard')->with('msg', 'Evento alterado com sucesso!');
+    }
 }
