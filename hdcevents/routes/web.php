@@ -12,16 +12,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 use App\Http\Controllers\EventController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\ProductController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
 Route::get('/events/{id}', [EventController::class, 'show']);
-Route::get('/contato', [ContactController::class, 'contact']);
-Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
-Route::delete('/events/{id}', [EventController::class, 'destroy']);
-Route::put('/events/{id}', [EventController::class, 'update']);
 Route::post('/events', [EventController::class, 'store']);
+Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth');
+Route::get('/events/edit/{id}', [EventController::class, 'edit'])->middleware('auth');
+Route::put('/events/update/{id}', [EventController::class, 'update'])->middleware('auth');
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
 
