@@ -44,7 +44,7 @@
     <h1>Eventos que estou participando</h1>
 </div>
 <div class="col-md-10 offset-md-1 dashboard-events-container">
-    @if(count($eventsasparticipant) > 0);
+    @if(count($eventsasparticipant) > 0)
         <table class="table">
             <thead>
                 <tr>
