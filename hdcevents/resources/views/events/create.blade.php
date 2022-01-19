@@ -10,7 +10,7 @@
     @csrf
     <div class="form-group">
       <label for="image">Imagem do Evento:</label>
-      <input type="file" id="image" name="image" class="form-control-file">
+      <input type="file" id="image" name="image" class="from-control-file">
     </div>
     <div class="form-group">
       <label for="title">Evento:</label>
@@ -18,7 +18,7 @@
     </div>
     <div class="form-group">
       <label for="date">Data do evento:</label>
-      <input type="date" class="form-control" id="data" name="data">
+      <input type="date" class="form-control" id="date" name="date">
     </div>
     <div class="form-group">
       <label for="title">Cidade:</label>
