@@ -1,1 +1,2 @@
-### Projeto feito em laravel de um sistema de eventos online tipo ingresso nacional ou sympla
+## Projeto feito em laravel 
+Sistema de eventos online tipo ingresso nacional ou sympla
